@@ -1,0 +1,138 @@
+.hex {
+  float: left;
+  margin-left: 3px;
+  margin-bottom: -26px;
+}
+.hex .top {
+  width: 0;
+  border-bottom: 30px solid #6C6;
+  border-left: 52px solid transparent;
+  border-right: 52px solid transparent;
+}
+.hex .middle {
+  width: 104px;
+  height: 60px;
+  background: #6C6;
+
+  text-align: center;
+  vertical-align: middle;
+  line-height: 60px;
+}
+.hex .bottom {
+  width: 0;
+  border-top: 30px solid #6C6;
+  border-left: 52px solid transparent;
+  border-right: 52px solid transparent;
+}
+
+.hex.hover {
+  opacity: 0.8;
+}
+.hex.hover-neighbor {
+  opacity: 0.6;
+}
+
+.hex.wood .top {
+  border-bottom-color: darkGreen;
+}
+.hex.wood .middle {
+  background: darkGreen;
+}
+.hex.wood .bottom {
+  border-top-color: darkGreen;
+}
+
+.hex.brick .top {
+  border-bottom-color: #B80000;
+}
+.hex.brick .middle {
+  background: #B80000;
+}
+.hex.brick .bottom {
+  border-top-color: #B80000;
+}
+
+.hex.wheat .top {
+  border-bottom-color: #FFCC00;
+}
+.hex.wheat .middle {
+  background: #FFCC00;
+}
+.hex.wheat .bottom {
+  border-top-color: #FFCC00;
+}
+
+.hex.sheep .top {
+  border-bottom-color: #33AD33;
+}
+.hex.sheep .middle {
+  background: #33AD33;
+}
+.hex.sheep .bottom {
+  border-top-color: #33AD33;
+}
+
+.hex.ore .top {
+  border-bottom-color: #3D4C2E;
+}
+.hex.ore .middle {
+  background: #3D4C2E;
+}
+.hex.ore .bottom {
+  border-top-color: #3D4C2E;
+}
+
+.hex.desert .top {
+  border-bottom-color: #CCFF99;
+}
+.hex.desert .middle {
+  background: #CCFF99;
+}
+.hex.desert .bottom {
+  border-top-color: #CCFF99;
+}
+
+.hex-row {
+  clear: left;
+}
+.hex-row.even {
+  margin-left: 53px;
+}
+.hex-map {
+  float: left;
+  width: 540px;
+}
+.hex-map > .hex-row:nth-child(1), .hex-map > .hex-row:nth-child(5) {
+  margin-left: 106px;
+}
+.hex-map > .hex-row:nth-child(2), .hex-map > .hex-row:nth-child(4) {
+  margin-left: 53px;
+}
+.hex-map > .hex-row:nth-child(3) {
+}
+div#board {
+  text-align: center;
+}
+div.clear {
+
+}
+div#board > div.resource {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+}
+div.resource.wood {
+  background-color: green;
+}
+div.resource.brick {
+  background-color: red;
+}
+div.resource.wheat {
+  background-color: yellow;
+}
+div.resource.sheep {
+  background-color: white;
+}
+div.resource.ore {
+  background-color: grey;
+}
