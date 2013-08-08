@@ -1,7 +1,7 @@
 .hex {
   float: left;
-  margin-left: 3px;
-  margin-bottom: -26px;
+  margin-left: 10px;
+  margin-bottom: -20px;
 }
 .hex .top {
   width: 0;
@@ -95,44 +95,61 @@
 .hex-row {
   clear: left;
 }
-.hex-row.even {
-  margin-left: 53px;
-}
 .hex-map {
   float: left;
-  width: 540px;
+  margin-left: 100px;
+  margin-top: 100px;
 }
 .hex-map > .hex-row:nth-child(1), .hex-map > .hex-row:nth-child(5) {
-  margin-left: 106px;
+  margin-left: 114px;
 }
 .hex-map > .hex-row:nth-child(2), .hex-map > .hex-row:nth-child(4) {
-  margin-left: 53px;
+  margin-left: 57px;
 }
 .hex-map > .hex-row:nth-child(3) {
 }
-div#board {
-  text-align: center;
-}
-div.clear {
 
+.border {
+  width: 56px;
+  height: 8px;
+  position: absolute;
+  margin-top: 3px;
+  background-color: black;
+  z-index: 90;
 }
-div#board > div.resource {
-  display: inline-block;
-  width: 40px;
-  height: 40px;
+.border.north-west {
+  -webkit-transform: rotate(-30deg);
 }
-div.resource.wood {
-  background-color: green;
+.border.north-east {
+  -webkit-transform: rotate(30deg);
 }
-div.resource.brick {
-  background-color: red;
+.border.west {
+  margin-top: 53px;
+  margin-left: -28px;
+  -webkit-transform: rotate(90deg);
 }
-div.resource.wheat {
-  background-color: yellow;
+.border.south-west {
+  -webkit-transform: rotate(30deg);
 }
-div.resource.sheep {
-  background-color: white;
+.border.south-east {
+  -webkit-transform: rotate(-30deg);
 }
-div.resource.ore {
-  background-color: grey;
+.border.east {
+  margin-top: 53px;
+  margin-left: 30px;
+  -webkit-transform: rotate(90deg);
+}
+.border.hover {
+  opacity: 0.7;
+}
+
+.settlement {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  background-color: blue;
+  z-index: 100;
+}
+.settlement.hover {
+  opacity: 0.7;
 }
